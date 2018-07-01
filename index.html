@@ -9,10 +9,16 @@
 
 		<link rel="stylesheet" href="css/lermantheboylaunch.css" type="text/css" media="screen" charset="utf-8">
 		<link rel="stylesheet" href="css/navbartop.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="css/magnific-popup.css">						
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/buffering.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+
 	</head>
 
-	<body class="lertmantheboy launch withxbone">
+	<body class="body_overlay lermantheboy launch withxbone">
+		<div id="buffering"> 
+			<img src="images/icon/hourglass_high.png" id="img_buffering" alt="img_buffering"> 
+		</div>
 		<ul class="navbar-top">
 			<li id="nav-1"><a href="index.html"><strong>Lerman the Boy</strong></a></li>
 			<li id="nav"><a href="#contacts"><strong><span class="collapse"> Contacts </span></strong></a></li>
@@ -20,8 +26,7 @@
 			<li id="nav"><a href="#portfolio"><strong><span class="collapse"> Portfolio </span></strong></a></li>
 			<li id="nav"><a href="#about"><strong><span class="collapse"> About </span></strong></a></li>
 		</ul>		
-		<script type="text/javascript">document.getElementById("nav-game").className += " current";</script>
-
+	
 		<div id="page">
 
 			<div class="keyart" id="nonparallax">
@@ -47,12 +52,10 @@
 				<div id="about" class="section pressquote big">			
 					<h3>About</h3>
 				</div>
-					<div id="whoami" class="section feature videoparent">
-					<div class="videocontain">
-						<video controls>
-    						<source src="video/whoami.mp4" type="video/mp4">
-						</video>
-					</div>
+				<div id="whoami" class="section feature videoparent">
+					<video controls style="width: 400px; height: 499.33px;">
+    					<source src="video/whoami.mp4" type="video/mp4" >
+					</video>
 				</div>
 				
 				<div class="section description">
@@ -116,7 +119,6 @@
 				</div>
 		</div>
 
-		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="js/magnific.js"></script>
 		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>

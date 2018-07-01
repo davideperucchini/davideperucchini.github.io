@@ -2,6 +2,10 @@
 	display: none;
 }
 
+ul.navbar-top {
+	display: none;
+}
+
 ul.navbar-top .reveal {
 	display: none;
 }
@@ -60,6 +64,7 @@ ul.navbar-top li {
 
 ul.navbar-top li#nav-1 {
 	float: left;
+	opacity: 0;
 }
 ul.navbar-top li#nav-1 a {
 	font-size: 18px;
