@@ -1,0 +1,36 @@
+#buffering {
+	position: absolute;
+	background-color: black;
+	color: black;
+	height:100%;
+	width:100%;
+	z-index: 1000;
+}
+
+#img_buffering {
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+	animation: buffering 1.5s infinite;
+	width: 10vh;
+	height: 10vh;
+}
+
+.body_overlay {
+	overflow: hidden;
+}
+
+.Scompari {
+	animation: scompari 0.1s forwards;
+}
+
+@keyframes buffering {
+  		0% {transform: translate(-50%, -50%) rotate(0deg);}
+  		100% {transform: translate(-50%, -50%) rotate(-180deg);}
+	}
+
+@keyframes scompari {
+  		0% {opacity: 1; display: initial; z-index: 0;}
+  		100% {opacity: 0; display: none; z-index: -1;}
+	}
