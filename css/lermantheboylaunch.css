@@ -316,7 +316,7 @@ s:before {
 
 .videocontain {
 	position: relative;
-	padding-bottom: 56.1%;
+	padding-bottom: 35%;
 	height: 0;
 	overflow: hidden;
 }
@@ -331,6 +331,11 @@ s:before {
 
 
 /* PRESS QUOTE SECTIONS */
+
+p {margin: 50px;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 3px;}
 
 .section.pressquote {
 	margin: 30px auto 60px;
