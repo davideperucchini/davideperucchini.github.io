@@ -10,7 +10,7 @@ a, a:link, a:visited { color: inherit; text-decoration: inherit; }
 .section.internallinks, .section.internallinks * {
 	vertical-align: baseline;
 }
-/*ciao*/
+
 html {
 	background-color: #b4b4b4;
 	color: #ffffff;
@@ -363,13 +363,14 @@ letter-spacing: 3px;}
 .section.pressquote.big h3 {
 	font-size: 18px;
 	letter-spacing: 4px;
+	padding-top: 5vh;
 }
 
 /* EMPTY SECTION */
 
 .section.empty {
 	color: #ffffff;
-	height:20vh;
+	height: 5vh;
 }
 
 /* SCREENSHOT SECTION */
