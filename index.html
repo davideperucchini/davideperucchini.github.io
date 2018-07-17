@@ -60,18 +60,7 @@
 				
 				<div class="section description">
 					<h5>I'm <strike>lerman.theboy</strike> (that's fine <strike>Lerman <br/>the Boy</strike>, too). Or at least they told me <br/>that my name is like that. But, actually, <br/>I still don't know who I really am.</h5>
-<!--
-					<div class="columntext">
-						<p class="left">The year is 2018.
-						<br/><br/>
-						You are a man named Henry who has retreated from your messy life to work as a fire lookout in the Wyoming wilderness. Perched atop a mountain, it's your job to find smoke and keep the wilderness safe.
-						<br/><br/>
-						An especially hot, dry summer has everyone on edge. Your supervisor, a woman named Delilah, is available to you </p><p>at all times over a small, handheld radio—and is your only contact with the world you've left behind.
-						<br/><br/>
-						But when something strange draws you out of your lookout tower and into the world below, you'll explore a wild and unknown environment, facing questions and making interpersonal choices that can build or destroy the only meaningful relationship you have.
-						</p>
-					</div>
--->
+
 				</div>
 
 				<div class="section empty">
@@ -80,23 +69,55 @@
 				<div id="portfolio" class="section pressquote big">			
 					<h3>Portfolio</h3>
 				</div>
+					<p>Artworks</p>
 				<div class="section screenshots">
 					<ul class="thumbnails">
 						<li>
-							<a href="images/portfolio/portfolio1.jpg"><img src="images/portfolio/thumbs/thumb1.jpg" /></a>
+							<a href="images/portfolio/portfolio1.jpg" title="Elliot's Annihilation <br/> 02.02.17 | Grime Art"><img src="images/portfolio/thumbs/thumb1.jpg" /></a> 
 						</li
 						><li>
-							<a href="images/portfolio/portfolio2.jpg"><img src="images/portfolio/thumbs/thumb2.jpg" /></a>
+							<a href="images/portfolio/portfolio2.jpg" title="Hayao Miyazaki <br/> 29.07.15 | Line Art"><img src="images/portfolio/thumbs/thumb2.jpg" /></a>
 						</li
 						><li>
-							<a href="images/portfolio/portfolio3.jpg"><img src="images/portfolio/thumbs/thumb3.jpg" /></a>
+							<a href="images/portfolio/portfolio3.jpg" title="Thom Yorke <br/> 23.09.12 | Line Art"><img src="images/portfolio/thumbs/thumb3.jpg" /></a>
 						</li
 						><li>
-							<a href="images/portfolio/portfolio4.jpg"><img src="images/portfolio/thumbs/thumb4.jpg" /></a>
+							<a href="images/portfolio/portfolio4.jpg" title="The Big Screen's Nighthawks <br/> 11.10.16 | Crossover/artXcinema"><img src="images/portfolio/thumbs/thumb4.jpg" /></a>
+						</li>
+						<li>
+							<a href="images/portfolio/portfolio5.jpg" title="The Great Wave Warning under the Red Sunset on Lake <br/> 23.08.16 | Crossover/artXart"><img src="images/portfolio/thumbs/thumb5.jpg" /></a>
+						</li
+						><li>
+							<a href="images/portfolio/portfolio6.jpg" title="My Melancholic City <br/> 03.05.17 | Vaporwave Edit"><img src="images/portfolio/thumbs/thumb6.jpg" /></a>
+						</li
+						><li>
+							<a href="images/portfolio/portfolio7.jpg" title="Where is my Mind? <br/> 28.01.17 | Digital Painting"><img src="images/portfolio/thumbs/thumb7.jpg" /></a>
+						</li
+						><li>
+							<a href="images/portfolio/portfolio8.jpg" title="Dream (Mantis Religiosa) <br/> 12.09.16 | Colored version of the litograph 'Dream', a tribute to MC Escher"><img src="images/portfolio/thumbs/thumb8.jpg" /></a>
+						</li
+						><li>
+							<a href="images/portfolio/portfolio9.jpg" title="Football Radio <br/> 30.04.18 | Cover art for a Spotify's playlist"><img src="images/portfolio/thumbs/thumb9.jpg" /></a>
+						</li
+						><li>
+							<a href="images/portfolio/portfolio10.jpg" title="Polisportiva Rovinata <br/> 12.05.18 | Advertising billboard for a local football's team"><img src="images/portfolio/thumbs/thumb10.jpg" /></a>
 						</li>
 					</ul>
 				</div>
 
+				<p>Videos - University Projects</p>
+				
+				<div class="section screenshots">
+					<ul class="thumbnails">
+						<li>
+							<iframe src="https://www.youtube.com/embed/xCoSsy1xGVY" width="423" height="238" frameborder="0" allowfullscreen></iframe> 
+						</li
+						><li>
+							<iframe src="https://www.youtube.com/embed/jNCqFAXkcfY" width="423" height="238" frameborder="0" allowfullscreen></iframe>
+						</li>
+					</ul>
+				</div>
+			
 				<div class="section empty">
 				</div>
 
@@ -135,7 +156,7 @@
 					enabled: true,
 					preload: [1,1]
 				},
-				mainClass: 'mfp-with-zoom',
+				mainClass: 'with-zoom',
 				zoom: {
 					enabled: true,
 					duration: 300,
@@ -146,6 +167,17 @@
 				}
 			});	
 		});
+
+		$("img").mouseenter(function(){
+		var imgtitle = $(this).attr("title");     
+        $(this).attr("data-title", imgtitle);     
+        $(this).attr("title","");
+        });
+    	$(".element").mouseleave(function(){
+        var imgTitle = $(this).attr("data-title");
+      	$(this).attr("title","imgtitle ");             
+   		});
+
 		</script>
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
